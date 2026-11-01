@@ -1,0 +1,41 @@
+{
+  "bg": {
+    "title": "Наши приятели",
+    "seo_description": "Приятели и партньори на кабинет Номи.",
+    "intro": "",
+    "friends": [
+      {
+        "name": "Детски клуб „Мики Маус“",
+        "logo": "/images/uploads/miki-club-logo.png",
+        "url": "https://miki-club.com",
+        "text": "Организиране на детски партита и занималня за деца."
+      }
+    ]
+  },
+  "de": {
+    "title": "Unsere Freunde",
+    "seo_description": "Freunde und Partner der Praxis Nomi.",
+    "intro": "",
+    "friends": [
+      {
+        "name": "Kinderclub „Micky Maus“",
+        "logo": "/images/uploads/miki-club-logo.png",
+        "url": "https://miki-club.com",
+        "text": "Kindergeburtstage, Partys und Kinderbetreuung."
+      }
+    ]
+  },
+  "en": {
+    "title": "Our friends",
+    "seo_description": "Friends and partners of the Nomi practice.",
+    "intro": "",
+    "friends": [
+      {
+        "name": "“Mickey Mouse” children's club",
+        "logo": "/images/uploads/miki-club-logo.png",
+        "url": "https://miki-club.com",
+        "text": "Children's parties and a day-care play centre."
+      }
+    ]
+  }
+}

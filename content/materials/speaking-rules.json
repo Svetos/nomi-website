@@ -1,0 +1,26 @@
+{
+  "bg": {
+    "order": 1,
+    "title": "Правила за говорене",
+    "summary": "Осем лесни правила, които помагат на децата да говорят спокойно, ясно и с удоволствие.",
+    "image": "/assets/img/old/sun.png",
+    "body": "1. Първо помисли, а после говори!\n2. Помисли добре какво ще кажеш!\n3. Винаги говори бавно и ясно!\n4. Говори изразително и избирай верните думи!\n5. Преди да се изкажеш, поеми си дъх, за да говориш плавно!\n6. Винаги довършвай мисълта си и казвай изреченията до края!\n7. Винаги изслушвай събеседника си и никога не го прекъсвай!\n8. Винаги изчаквай да дойде твоят ред за говорене!",
+    "closing": "Запомни тези правила!\nВинаги ги спазвай!\nГоворенето е приятно!\nЗабавлявай се, когато говориш с другите!"
+  },
+  "de": {
+    "order": 1,
+    "title": "Regeln fürs Sprechen",
+    "summary": "Acht einfache Regeln, die Kindern helfen, ruhig, deutlich und mit Freude zu sprechen.",
+    "image": "/assets/img/old/sun.png",
+    "body": "1. Erst denken, dann sprechen!\n2. Überlege gut, was du sagen willst!\n3. Sprich immer langsam und deutlich!\n4. Sprich ausdrucksvoll und wähle die richtigen Wörter!\n5. Atme ein, bevor du sprichst, damit du flüssig redest!\n6. Sprich deinen Gedanken immer zu Ende und sag die Sätze vollständig!\n7. Hör deinem Gesprächspartner immer zu und unterbrich ihn nie!\n8. Warte immer, bis du an der Reihe bist!",
+    "closing": "Merk dir diese Regeln!\nHalte dich immer daran!\nSprechen macht Freude!\nHab Spaß, wenn du mit anderen sprichst!"
+  },
+  "en": {
+    "order": 1,
+    "title": "Rules for speaking",
+    "summary": "Eight simple rules that help children speak calmly, clearly and with pleasure.",
+    "image": "/assets/img/old/sun.png",
+    "body": "1. Think first, then speak!\n2. Think carefully about what you are going to say!\n3. Always speak slowly and clearly!\n4. Speak expressively and choose the right words!\n5. Take a breath before you speak, so that you speak smoothly!\n6. Always finish your thought and say your sentences to the end!\n7. Always listen to the person you are talking to and never interrupt!\n8. Always wait for your turn to speak!",
+    "closing": "Remember these rules!\nAlways follow them!\nTalking is fun!\nEnjoy yourself when you talk with others!"
+  }
+}

@@ -1,0 +1,95 @@
+{
+  "bg": {
+    "title": "Услуги",
+    "seo_description": "Логопедични и психологични консултации и терапия за деца и възрастни в кабинет Номи.",
+    "intro": "",
+    "groups": [
+      {
+        "title": "Логопедични консултации",
+        "icon": "speech",
+        "items": [
+          "Терапия на деца и възрастни с артикулационни нарушения",
+          "Терапия на езикови нарушения – забавено езиково развитие, фонологични, граматични и семантични нарушения, нарушена употреба на езика, дислексия",
+          "Работа с деца с обучителни затруднения",
+          "Терапия при деца с ринолалия",
+          "Терапия на деца с аутизъм и поведение с елементи от аутистичния спектър, синдром на Аспергер",
+          "Терапия при заекване и неплавност на речта, прекалено бързо или бавно говорене – при деца и възрастни",
+          "Терапия при дизартрия, ДЦП",
+          "Работа с деца с лека умствена изостаналост, синдром на Даун",
+          "Изследване на коефициента на интелигентност при деца от 6 до 16 г. с теста на Векслер, който се използва и за констатиране на умствена изостаналост"
+        ]
+      },
+      {
+        "title": "Психологични консултации",
+        "icon": "heart",
+        "items": [
+          "Фамилни консултации за деца и родители",
+          "Работа с деца с поведенчески проблеми, ХАДВ (хиперактивност и дефицит на вниманието)",
+          "Терапия при афазия (говорни и езикови нарушения вследствие на органични поражения на мозъка – напр. претърпяна мозъчна интервенция, инсулт, неврологично заболяване)"
+        ]
+      }
+    ]
+  },
+  "de": {
+    "title": "Leistungen",
+    "seo_description": "Logopädische und psychologische Beratung und Therapie für Kinder und Erwachsene in der Praxis Nomi.",
+    "intro": "",
+    "groups": [
+      {
+        "title": "Logopädische Beratung",
+        "icon": "speech",
+        "items": [
+          "Therapie von Kindern und Erwachsenen mit Artikulationsstörungen",
+          "Therapie von Sprachstörungen – verzögerte Sprachentwicklung, phonologische, grammatische und semantische Störungen, gestörter Sprachgebrauch, Legasthenie",
+          "Arbeit mit Kindern mit Lernschwierigkeiten",
+          "Therapie bei Kindern mit Rhinolalie (Näseln)",
+          "Therapie von Kindern mit Autismus und Verhalten mit Elementen aus dem autistischen Spektrum, Asperger-Syndrom",
+          "Therapie bei Stottern und Redeflussstörungen, zu schnellem oder zu langsamem Sprechen – bei Kindern und Erwachsenen",
+          "Therapie bei Dysarthrie, infantiler Zerebralparese",
+          "Arbeit mit Kindern mit leichter geistiger Behinderung, Down-Syndrom",
+          "Bestimmung des Intelligenzquotienten bei Kindern von 6 bis 16 Jahren mit dem Wechsler-Test, der auch zur Feststellung einer geistigen Behinderung eingesetzt wird"
+        ]
+      },
+      {
+        "title": "Psychologische Beratung",
+        "icon": "heart",
+        "items": [
+          "Familienberatung für Kinder und Eltern",
+          "Arbeit mit Kindern mit Verhaltensproblemen, ADHS (Aufmerksamkeitsdefizit-/Hyperaktivitätsstörung)",
+          "Therapie bei Aphasie (Sprech- und Sprachstörungen infolge organischer Hirnschädigungen – z. B. nach einem Eingriff am Gehirn, einem Schlaganfall oder einer neurologischen Erkrankung)"
+        ]
+      }
+    ]
+  },
+  "en": {
+    "title": "Services",
+    "seo_description": "Speech therapy and psychological consultations and therapy for children and adults at the Nomi practice.",
+    "intro": "",
+    "groups": [
+      {
+        "title": "Speech therapy",
+        "icon": "speech",
+        "items": [
+          "Therapy for children and adults with articulation disorders",
+          "Therapy for language disorders – delayed language development, phonological, grammatical and semantic disorders, impaired language use, dyslexia",
+          "Work with children with learning difficulties",
+          "Therapy for children with rhinolalia",
+          "Therapy for children with autism and behaviour on the autism spectrum, Asperger's syndrome",
+          "Therapy for stuttering and non-fluent speech, speaking too fast or too slowly – for children and adults",
+          "Therapy for dysarthria, cerebral palsy",
+          "Work with children with mild intellectual disability, Down syndrome",
+          "IQ assessment for children aged 6 to 16 with the Wechsler test, which is also used to diagnose intellectual disability"
+        ]
+      },
+      {
+        "title": "Psychological consultations",
+        "icon": "heart",
+        "items": [
+          "Family consultations for children and parents",
+          "Work with children with behavioural problems, ADHD (attention deficit hyperactivity disorder)",
+          "Therapy for aphasia (speech and language disorders caused by organic brain damage – e.g. after brain surgery, a stroke or a neurological illness)"
+        ]
+      }
+    ]
+  }
+}

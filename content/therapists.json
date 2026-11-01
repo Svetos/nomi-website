@@ -1,0 +1,125 @@
+{
+  "bg": {
+    "title": "Терапевти",
+    "seo_description": "Запознайте се с Игна Василева – логопед, психолог и консултант-психотерапевт в кабинет Номи.",
+    "intro": "",
+    "therapists": [
+      {
+        "name": "Игна Василева",
+        "role": "Логопед, психолог, консултант-психотерапевт",
+        "photo": "",
+        "education_title": "Образование",
+        "education": [
+          {
+            "degree": "Магистър – Социална и политическа психология",
+            "institution": "Великотърновски университет „Св. св. Кирил и Методий“",
+            "note": "Тема на дипломната работа – „Съзнание и поведение“"
+          },
+          {
+            "degree": "Магистър – Логопед",
+            "institution": "Нов български университет",
+            "note": "Тема на дипломната работа – „Особености на вниманието при деца с комуникативни нарушения“"
+          },
+          {
+            "degree": "Консултант-психотерапевт",
+            "institution": "Нов български университет",
+            "note": "Продължаващо обучение – Програма „Психотерапия“"
+          }
+        ],
+        "experience_title": "Квалификации и опит",
+        "experience": [
+          "Психодрама – 200 часа",
+          "Сертификат за работа с теста на Векслер за интелигентност при деца от 6 до 16 г. (HAWIK-R 1983), българска стандартизация, който се използва и за констатиране на умствена изостаналост – Национален център по опазване на общественото здраве към Министерството на здравеопазването",
+          "Сертификат – Мотивационно интервюиране – първо ниво – Клиника „Канчелов“",
+          "Сертификат за работа с PECS (The Picture Exchange Communication System), приложима при деца с аутизъм и други комуникативни затруднения – НБУ",
+          "Участие в лятна школа по когнитивна психология към НБУ",
+          "Участник в група за индивидуална психоаналитична психодрама",
+          "Работа в „Център за терапия на комуникативни и емоционално-поведенчески нарушения в детска възраст“ към Нов български университет",
+          "Участие в европейски проект „Интеграция на деца с комуникативни нарушения“"
+        ]
+      }
+    ]
+  },
+  "de": {
+    "title": "Therapeuten",
+    "seo_description": "Lernen Sie Igna Vasileva kennen – Logopädin, Psychologin und psychotherapeutische Beraterin in der Praxis Nomi.",
+    "intro": "",
+    "therapists": [
+      {
+        "name": "Igna Vasileva",
+        "role": "Logopädin, Psychologin, psychotherapeutische Beraterin",
+        "photo": "",
+        "education_title": "Ausbildung",
+        "education": [
+          {
+            "degree": "Master – Sozial- und politische Psychologie",
+            "institution": "Universität Veliko Tarnovo „Hl. Kyrill und Method“",
+            "note": "Thema der Masterarbeit – „Bewusstsein und Verhalten“"
+          },
+          {
+            "degree": "Master – Logopädie",
+            "institution": "Neue Bulgarische Universität (NBU)",
+            "note": "Thema der Masterarbeit – „Besonderheiten der Aufmerksamkeit bei Kindern mit Kommunikationsstörungen“"
+          },
+          {
+            "degree": "Psychotherapeutische Beraterin",
+            "institution": "Neue Bulgarische Universität (NBU)",
+            "note": "Weiterbildung – Programm „Psychotherapie“"
+          }
+        ],
+        "experience_title": "Qualifikationen und Erfahrung",
+        "experience": [
+          "Psychodrama – 200 Stunden",
+          "Zertifikat für die Arbeit mit dem Wechsler-Intelligenztest für Kinder von 6 bis 16 Jahren (HAWIK-R 1983), bulgarische Standardisierung, der auch zur Feststellung einer geistigen Behinderung eingesetzt wird – Nationales Zentrum für öffentliche Gesundheit beim Gesundheitsministerium",
+          "Zertifikat – Motivierende Gesprächsführung (Motivational Interviewing) – Stufe 1 – Klinik „Kanchelov“",
+          "Zertifikat für die Arbeit mit PECS (The Picture Exchange Communication System) bei Kindern mit Autismus und anderen Kommunikationsschwierigkeiten – NBU",
+          "Teilnahme an der Sommerschule für Kognitive Psychologie an der NBU",
+          "Teilnahme an einer Gruppe für individuelles psychoanalytisches Psychodrama",
+          "Tätigkeit im „Zentrum für die Therapie von Kommunikations- sowie emotionalen und Verhaltensstörungen im Kindesalter“ an der Neuen Bulgarischen Universität",
+          "Teilnahme am europäischen Projekt „Integration von Kindern mit Kommunikationsstörungen“"
+        ]
+      }
+    ]
+  },
+  "en": {
+    "title": "Therapists",
+    "seo_description": "Meet Igna Vasileva – speech therapist, psychologist and psychotherapeutic counsellor at the Nomi practice.",
+    "intro": "",
+    "therapists": [
+      {
+        "name": "Igna Vasileva",
+        "role": "Speech therapist, psychologist, psychotherapeutic counsellor",
+        "photo": "",
+        "education_title": "Education",
+        "education": [
+          {
+            "degree": "Master's – Social and Political Psychology",
+            "institution": "St. Cyril and St. Methodius University of Veliko Tarnovo",
+            "note": "Thesis – “Consciousness and Behaviour”"
+          },
+          {
+            "degree": "Master's – Speech and Language Therapy",
+            "institution": "New Bulgarian University (NBU)",
+            "note": "Thesis – “Characteristics of attention in children with communication disorders”"
+          },
+          {
+            "degree": "Psychotherapeutic counsellor",
+            "institution": "New Bulgarian University (NBU)",
+            "note": "Continuing education – “Psychotherapy” programme"
+          }
+        ],
+        "experience_title": "Qualifications and experience",
+        "experience": [
+          "Psychodrama – 200 hours",
+          "Certificate for working with the Wechsler Intelligence Scale for Children aged 6 to 16 (HAWIK-R 1983), Bulgarian standardisation, which is also used to diagnose intellectual disability – National Centre of Public Health, Ministry of Health",
+          "Certificate – Motivational Interviewing, level one – Kanchelov Clinic",
+          "Certificate for working with PECS (The Picture Exchange Communication System), used with children with autism and other communication difficulties – NBU",
+          "Summer school in Cognitive Psychology at NBU",
+          "Member of an individual psychoanalytic psychodrama group",
+          "Work at the “Centre for Therapy of Communication, Emotional and Behavioural Disorders in Childhood” at New Bulgarian University",
+          "Participation in the European project “Integration of Children with Communication Disorders”"
+        ]
+      }
+    ]
+  }
+}

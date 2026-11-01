@@ -1,0 +1,203 @@
+{
+  "bg": {
+    "title": "Полезни връзки",
+    "seo_description": "Полезни сайтове за деца и родители – игри, оцветяване, информация за родители и детско здраве.",
+    "intro": "Подбрани сайтове с игри, занимания и полезна информация за деца и родители.",
+    "groups": [
+      {
+        "title": "За забавление – игри за деца, материали за оцветяване, изрязване, лепене и обучение",
+        "links": [
+          {
+            "label": "Кроко Так",
+            "url": "https://krokotak.com",
+            "note": "Идеи за детски занимания и поделки"
+          },
+          {
+            "label": "Хлапе",
+            "url": "https://hlape.net",
+            "note": ""
+          },
+          {
+            "label": "Дечица",
+            "url": "https://www.dechica.com",
+            "note": ""
+          }
+        ]
+      },
+      {
+        "title": "Информация за родители",
+        "links": [
+          {
+            "label": "Списание „9 месеца“",
+            "url": "http://www.9m-bg.com",
+            "note": ""
+          },
+          {
+            "label": "Предай нататък",
+            "url": "https://www.predainatatak.bg",
+            "note": ""
+          },
+          {
+            "label": "БГ-Мама",
+            "url": "https://forum.bg-mamma.com",
+            "note": "Форум за родители"
+          }
+        ]
+      },
+      {
+        "title": "Медицина за деца",
+        "links": [
+          {
+            "label": "Д-р Марио",
+            "url": "https://www.d-rmario.com",
+            "note": ""
+          }
+        ]
+      },
+      {
+        "title": "На английски",
+        "links": [
+          {
+            "label": "ABC Kids",
+            "url": "https://www.abc.net.au/abckids",
+            "note": "Интерактивни игри за деца"
+          }
+        ]
+      }
+    ]
+  },
+  "de": {
+    "title": "Nützliche Links",
+    "seo_description": "Nützliche Websites für Kinder und Eltern – Spiele, Ausmalbilder, Informationen für Eltern und Kindergesundheit.",
+    "intro": "Ausgewählte Websites mit Spielen, Beschäftigungsideen und nützlichen Informationen für Kinder und Eltern (überwiegend auf Bulgarisch).",
+    "groups": [
+      {
+        "title": "Zum Spaß – Spiele für Kinder, Ausmalen, Ausschneiden, Basteln und Lernen",
+        "links": [
+          {
+            "label": "Kroko Tak",
+            "url": "https://krokotak.com",
+            "note": "Ideen für Kinderbeschäftigung und Basteln"
+          },
+          {
+            "label": "Hlape",
+            "url": "https://hlape.net",
+            "note": ""
+          },
+          {
+            "label": "Dechica",
+            "url": "https://www.dechica.com",
+            "note": ""
+          }
+        ]
+      },
+      {
+        "title": "Informationen für Eltern",
+        "links": [
+          {
+            "label": "Zeitschrift „9 Monate“",
+            "url": "http://www.9m-bg.com",
+            "note": ""
+          },
+          {
+            "label": "Predai natatak",
+            "url": "https://www.predainatatak.bg",
+            "note": ""
+          },
+          {
+            "label": "BG-Mamma",
+            "url": "https://forum.bg-mamma.com",
+            "note": "Elternforum"
+          }
+        ]
+      },
+      {
+        "title": "Medizin für Kinder",
+        "links": [
+          {
+            "label": "Dr. Mario",
+            "url": "https://www.d-rmario.com",
+            "note": ""
+          }
+        ]
+      },
+      {
+        "title": "Auf Englisch",
+        "links": [
+          {
+            "label": "ABC Kids",
+            "url": "https://www.abc.net.au/abckids",
+            "note": "Interaktive Spiele für Kinder"
+          }
+        ]
+      }
+    ]
+  },
+  "en": {
+    "title": "Useful links",
+    "seo_description": "Useful websites for children and parents – games, colouring, information for parents and children's health.",
+    "intro": "A selection of websites with games, activities and useful information for children and parents (mostly in Bulgarian).",
+    "groups": [
+      {
+        "title": "For fun – games for children, colouring, cutting, crafts and learning",
+        "links": [
+          {
+            "label": "Kroko Tak",
+            "url": "https://krokotak.com",
+            "note": "Ideas for children's activities and crafts"
+          },
+          {
+            "label": "Hlape",
+            "url": "https://hlape.net",
+            "note": ""
+          },
+          {
+            "label": "Dechica",
+            "url": "https://www.dechica.com",
+            "note": ""
+          }
+        ]
+      },
+      {
+        "title": "Information for parents",
+        "links": [
+          {
+            "label": "“9 Months” magazine",
+            "url": "http://www.9m-bg.com",
+            "note": ""
+          },
+          {
+            "label": "Predai natatak (Pass it on)",
+            "url": "https://www.predainatatak.bg",
+            "note": ""
+          },
+          {
+            "label": "BG-Mamma",
+            "url": "https://forum.bg-mamma.com",
+            "note": "Parents' forum"
+          }
+        ]
+      },
+      {
+        "title": "Children's health",
+        "links": [
+          {
+            "label": "Dr. Mario",
+            "url": "https://www.d-rmario.com",
+            "note": ""
+          }
+        ]
+      },
+      {
+        "title": "In English",
+        "links": [
+          {
+            "label": "ABC Kids",
+            "url": "https://www.abc.net.au/abckids",
+            "note": "Interactive games for children"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "bg": {
+    "seo_title": "Логопедичен и психологичен кабинет Номи",
+    "seo_description": "Ако Вашето дете изостава в своето умствено развитие, има затруднения във фината моторика, забавено езиково развитие, заекване, обучителни трудности или проблеми с вниманието, може би е време да се обърнете към специалист – логопед, психолог.",
+    "hero_kicker": "Логопедичен и психологичен кабинет Номи",
+    "hero_title": "Всяко дете заслужава да расте спокойно и уверено",
+    "hero_text": "Ако Вашето дете изостава в своето умствено развитие, има затруднения във фината моторика, забавено езиково развитие, заекване, пространствени затруднения, обучителни трудности, бързоречие, проблеми с вниманието или е хиперактивно, може би е време да се обърнете към специалист – логопед, психолог, за да може своевременно да му се помогне и то да се учи и развива пълноценно и да бъде спокойно и уверено в себе си.",
+    "questions_title": "Има много въпроси, над които си заслужава да помислим!",
+    "questions": [
+      "Разбираме ли света, в който живеят нашите деца?",
+      "Успяваме ли да общуваме пълноценно с тях?",
+      "Какви сме ние в техните представи?",
+      "Забелязваме ли как се променят, как реагират?"
+    ],
+    "motto": "Общуването е нашият живот",
+    "services_title": "С какво можем да помогнем",
+    "services_text": "Логопедична и психологична помощ за деца и възрастни – от първите думи до училищните предизвикателства.",
+    "parents_title": "Кътче за родители",
+    "parents_text": "Етапи в детското развитие, правила за говорене и упражнения, които можете да правите заедно у дома.",
+    "gallery_title": "Нашият кабинет",
+    "gallery_text": "Уютно място, пълно с игри, книжки и цветове.",
+    "contact_title": "Елате при нас",
+    "contact_text": "Обадете се или ни пишете, за да запишете час за консултация."
+  },
+  "de": {
+    "seo_title": "Logopädische und psychologische Praxis Nomi",
+    "seo_description": "Wenn Ihr Kind in seiner Entwicklung zurückbleibt, Schwierigkeiten mit der Feinmotorik, eine verzögerte Sprachentwicklung, Stottern, Lernschwierigkeiten oder Aufmerksamkeitsprobleme hat, ist es vielleicht Zeit für eine Fachperson – Logopädin, Psychologin.",
+    "hero_kicker": "Logopädische und psychologische Praxis Nomi",
+    "hero_title": "Jedes Kind verdient es, ruhig und selbstbewusst aufzuwachsen",
+    "hero_text": "Wenn Ihr Kind in seiner geistigen Entwicklung zurückbleibt, Schwierigkeiten mit der Feinmotorik, eine verzögerte Sprachentwicklung, Stottern, räumliche Orientierungsschwierigkeiten, Lernschwierigkeiten, Poltern (zu schnelles Sprechen) oder Aufmerksamkeitsprobleme hat oder hyperaktiv ist, ist es vielleicht an der Zeit, sich an eine Fachperson – Logopädin, Psychologin – zu wenden. So kann ihm rechtzeitig geholfen werden, damit es voll lernen und sich entwickeln kann und ruhig und selbstbewusst wird.",
+    "questions_title": "Es gibt viele Fragen, über die es sich nachzudenken lohnt!",
+    "questions": [
+      "Verstehen wir die Welt, in der unsere Kinder leben?",
+      "Gelingt es uns, wirklich mit ihnen zu kommunizieren?",
+      "Wie sehen sie uns in ihrer Vorstellung?",
+      "Bemerken wir, wie sie sich verändern und wie sie reagieren?"
+    ],
+    "motto": "Kommunikation ist unser Leben",
+    "services_title": "Wobei wir helfen können",
+    "services_text": "Logopädische und psychologische Unterstützung für Kinder und Erwachsene – von den ersten Wörtern bis zu den Herausforderungen der Schule.",
+    "parents_title": "Ecke für Eltern",
+    "parents_text": "Entwicklungsphasen des Kindes, Regeln fürs Sprechen und Übungen, die Sie gemeinsam zu Hause machen können.",
+    "gallery_title": "Unsere Praxis",
+    "gallery_text": "Ein gemütlicher Ort voller Spiele, Bücher und Farben.",
+    "contact_title": "Besuchen Sie uns",
+    "contact_text": "Rufen Sie an oder schreiben Sie uns, um einen Beratungstermin zu vereinbaren."
+  },
+  "en": {
+    "seo_title": "Nomi – speech therapy and child psychology practice",
+    "seo_description": "If your child is falling behind in their development, has fine motor difficulties, delayed language development, a stutter, learning difficulties or attention problems, it may be time to see a specialist – a speech therapist or psychologist.",
+    "hero_kicker": "Nomi speech therapy and psychology practice",
+    "hero_title": "Every child deserves to grow up calm and confident",
+    "hero_text": "If your child is falling behind in their mental development, has difficulties with fine motor skills, delayed language development, a stutter, spatial difficulties, learning difficulties, cluttering (speaking too fast), attention problems, or is hyperactive, it may be time to turn to a specialist – a speech therapist or psychologist – so that they can be helped in time, learn and develop fully, and feel calm and confident in themselves.",
+    "questions_title": "There are many questions worth thinking about!",
+    "questions": [
+      "Do we understand the world our children live in?",
+      "Do we manage to truly communicate with them?",
+      "How do we appear in their eyes?",
+      "Do we notice how they change and how they react?"
+    ],
+    "motto": "Communication is our life",
+    "services_title": "How we can help",
+    "services_text": "Speech therapy and psychological support for children and adults – from the very first words to the challenges of school.",
+    "parents_title": "Parents' corner",
+    "parents_text": "Stages of child development, rules for speaking and exercises you can do together at home.",
+    "gallery_title": "Our practice",
+    "gallery_text": "A cosy place full of games, books and colours.",
+    "contact_title": "Come and see us",
+    "contact_text": "Call or write to us to book a consultation."
+  }
+}

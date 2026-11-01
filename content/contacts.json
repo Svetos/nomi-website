@@ -1,0 +1,20 @@
+{
+  "bg": {
+    "title": "Контакти",
+    "seo_description": "Свържете се с логопедичен и психологичен кабинет Номи – с. Мрамор, ул. „Васил Левски“ 5, тел. 0888 510 378.",
+    "intro": "Ще се радваме да се запознаем с Вас и Вашето дете. Обадете се или ни пишете, за да уговорим час.",
+    "person": "Игна Василева"
+  },
+  "de": {
+    "title": "Kontakt",
+    "seo_description": "Kontakt zur logopädischen und psychologischen Praxis Nomi – Mramor, ul. „Vasil Levski“ 5, Tel. +359 888 510 378.",
+    "intro": "Wir freuen uns, Sie und Ihr Kind kennenzulernen. Rufen Sie an oder schreiben Sie uns, um einen Termin zu vereinbaren.",
+    "person": "Igna Vasileva"
+  },
+  "en": {
+    "title": "Contact",
+    "seo_description": "Contact the Nomi speech therapy and psychology practice – 5 Vasil Levski St., Mramor, phone +359 888 510 378.",
+    "intro": "We look forward to meeting you and your child. Call or write to us to arrange an appointment.",
+    "person": "Igna Vasileva"
+  }
+}

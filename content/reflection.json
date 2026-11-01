@@ -1,0 +1,26 @@
+{
+  "bg": {
+    "title": "Място за размисъл",
+    "seo_description": "Ранната интервенция е от особено важно значение. При първи съмнения за нарушение в развитието на детето потърсете специалист.",
+    "quote": "Истинското знание не е в познаването на фактите, което прави човека само педант, а в използването им, което го прави философ.",
+    "quote_author": "Хенри Бокл",
+    "note_title": "В някои от случаите ранната интервенция е от особено важно значение!",
+    "note": "При първи съмнения за някакво нарушение в развитието на Вашето дете е добре да потърсите консултация със специалист!"
+  },
+  "de": {
+    "title": "Zum Nachdenken",
+    "seo_description": "Frühe Intervention ist oft besonders wichtig. Suchen Sie beim ersten Verdacht auf eine Entwicklungsstörung eine Fachperson auf.",
+    "quote": "Wahres Wissen liegt nicht im Kennen der Tatsachen, das den Menschen nur zum Pedanten macht, sondern in ihrer Anwendung, die ihn zum Philosophen macht.",
+    "quote_author": "Henry Buckle",
+    "note_title": "In manchen Fällen ist eine frühe Intervention besonders wichtig!",
+    "note": "Beim ersten Verdacht auf eine Störung in der Entwicklung Ihres Kindes sollten Sie eine Fachperson um Rat fragen!"
+  },
+  "en": {
+    "title": "Food for thought",
+    "seo_description": "Early intervention is often especially important. At the first sign of a developmental problem, consult a specialist.",
+    "quote": "True knowledge lies not in knowing facts, which makes a man merely a pedant, but in using them, which makes him a philosopher.",
+    "quote_author": "Henry Buckle",
+    "note_title": "In some cases, early intervention is especially important!",
+    "note": "At the first suspicion of any problem in your child's development, it is a good idea to consult a specialist!"
+  }
+}

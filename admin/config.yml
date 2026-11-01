@@ -1,0 +1,365 @@
+# Sveltia CMS configuration – the editing panel at /admin/
+# Every save commits to the GitHub repository; GitHub Actions rebuilds the site (about 1 minute).
+#
+# Repository: https://github.com/Svetos/nomi-website
+
+backend:
+  name: github
+  repo: Svetos/nomi-website
+  branch: main
+  commit_messages:
+    create: "Ново: {{collection}} „{{slug}}“"
+    update: "Промяна: {{collection}} „{{slug}}“"
+    delete: "Изтрито: {{collection}} „{{slug}}“"
+    uploadMedia: "Качена снимка „{{path}}“"
+    deleteMedia: "Изтрита снимка „{{path}}“"
+
+site_url: https://nomi-bg.com
+display_url: https://svetos.github.io/nomi-website/
+logo:
+  src: ../assets/img/favicon.svg
+
+media_folder: images/uploads
+public_folder: /images/uploads
+
+# Every text exists in Bulgarian, German and English. Empty German/English fields show the Bulgarian text.
+i18n:
+  structure: single_file
+  locales: [bg, de, en]
+  default_locale: bg
+
+collections:
+  # ------------------------------------------------------------------ pages
+  - name: pages
+    label: Страници
+    label_singular: Страница
+    description: Текстовете на всички страници на сайта. Превключвайте езика (BG / DE / EN) горе в редактора.
+    i18n: true
+    files:
+      - name: home
+        label: Начало
+        file: content/home.json
+        i18n: true
+        fields:
+          - { name: seo_title, label: Заглавие в Google, widget: string, i18n: true }
+          - { name: seo_description, label: Описание в Google, widget: text, i18n: true }
+          - { name: hero_kicker, label: Малък надпис над заглавието, widget: string, i18n: true }
+          - { name: hero_title, label: Голямо заглавие, widget: string, i18n: true }
+          - { name: hero_text, label: Въвеждащ текст, widget: text, i18n: true }
+          - { name: questions_title, label: Заглавие на въпросите, widget: string, i18n: true }
+          - name: questions
+            label: Въпроси (балончета)
+            widget: list
+            i18n: true
+            field: { name: question, label: Въпрос, widget: string }
+          - { name: motto, label: Девиз, widget: string, i18n: true }
+          - { name: services_title, label: "Услуги: заглавие", widget: string, i18n: true }
+          - { name: services_text, label: "Услуги: текст", widget: text, i18n: true }
+          - { name: parents_title, label: "Кътче за родители: заглавие", widget: string, i18n: true }
+          - { name: parents_text, label: "Кътче за родители: текст", widget: text, i18n: true }
+          - { name: gallery_title, label: "Галерия: заглавие", widget: string, i18n: true }
+          - { name: gallery_text, label: "Галерия: текст", widget: text, i18n: true }
+          - { name: contact_title, label: "Контакти: заглавие", widget: string, i18n: true }
+          - { name: contact_text, label: "Контакти: текст", widget: text, i18n: true }
+
+      - name: therapists
+        label: Терапевти
+        file: content/therapists.json
+        i18n: true
+        fields:
+          - { name: title, label: Заглавие на страницата, widget: string, i18n: true }
+          - { name: seo_description, label: Описание в Google, widget: text, i18n: true }
+          - { name: intro, label: Въведение (по желание), widget: text, required: false, i18n: true }
+          - name: therapists
+            label: Терапевти
+            label_singular: Терапевт
+            widget: list
+            i18n: true
+            summary: "{{fields.name}}"
+            fields:
+              - { name: name, label: Име, widget: string }
+              - { name: role, label: Професия, widget: string }
+              - { name: photo, label: Снимка (по желание), widget: image, required: false, hint: "Ако няма снимка, се показва малко Номче." }
+              - { name: education_title, label: "Заглавие: образование", widget: string }
+              - name: education
+                label: Образование
+                widget: list
+                summary: "{{fields.degree}}"
+                fields:
+                  - { name: degree, label: Степен / специалност, widget: string }
+                  - { name: institution, label: Университет, widget: string }
+                  - { name: note, label: Бележка, widget: string, required: false }
+              - { name: experience_title, label: "Заглавие: квалификации", widget: string }
+              - name: experience
+                label: Квалификации и опит
+                widget: list
+                field: { name: item, label: Ред, widget: text }
+
+      - name: services
+        label: Услуги
+        file: content/services.json
+        i18n: true
+        fields:
+          - { name: title, label: Заглавие на страницата, widget: string, i18n: true }
+          - { name: seo_description, label: Описание в Google, widget: text, i18n: true }
+          - { name: intro, label: Въведение (по желание), widget: text, required: false, i18n: true }
+          - name: groups
+            label: Групи услуги
+            label_singular: Група
+            widget: list
+            i18n: true
+            summary: "{{fields.title}}"
+            fields:
+              - { name: title, label: Заглавие, widget: string }
+              - name: icon
+                label: Иконка
+                widget: select
+                options:
+                  - { label: Говорно балонче, value: speech }
+                  - { label: Сърце, value: heart }
+                  - { label: Звезда, value: star }
+                  - { label: Книга, value: book }
+              - name: items
+                label: Услуги
+                widget: list
+                field: { name: item, label: Услуга, widget: text }
+
+      - name: prices
+        label: Цени
+        file: content/prices.json
+        i18n: true
+        fields:
+          - { name: title, label: Заглавие на страницата, widget: string, i18n: true }
+          - { name: seo_description, label: Описание в Google, widget: text, i18n: true }
+          - { name: intro, label: Въведение (по желание), widget: text, required: false, i18n: true }
+          - name: items
+            label: Цени
+            label_singular: Цена
+            widget: list
+            i18n: true
+            summary: "{{fields.price}} – {{fields.name}}"
+            fields:
+              - { name: name, label: Услуга, widget: text }
+              - { name: duration, label: Продължителност (по желание), widget: string, required: false }
+              - { name: price, label: Цена, widget: string, hint: "Например: 40 €" }
+
+      - name: development
+        label: Развитие на детето (въведение)
+        file: content/development.json
+        i18n: true
+        fields:
+          - { name: title, label: Заглавие на страницата, widget: string, i18n: true }
+          - { name: seo_description, label: Описание в Google, widget: text, i18n: true }
+          - { name: body, label: Текст, widget: markdown, i18n: true }
+          - { name: stages_title, label: Заглавие над етапите, widget: string, i18n: true }
+
+      - name: materials
+        label: Материали (въведение)
+        file: content/materials.json
+        i18n: true
+        fields:
+          - { name: title, label: Заглавие на страницата, widget: string, i18n: true }
+          - { name: seo_description, label: Описание в Google, widget: text, i18n: true }
+          - { name: body, label: Текст, widget: markdown, i18n: true }
+          - { name: highlight, label: Откроен текст (розовата кутийка), widget: text, i18n: true }
+          - { name: articles_title, label: Заглавие над материалите, widget: string, i18n: true }
+
+      - name: reflection
+        label: Място за размисъл
+        file: content/reflection.json
+        i18n: true
+        fields:
+          - { name: title, label: Заглавие на страницата, widget: string, i18n: true }
+          - { name: seo_description, label: Описание в Google, widget: text, i18n: true }
+          - { name: quote, label: Цитат, widget: text, i18n: true }
+          - { name: quote_author, label: Автор на цитата, widget: string, i18n: true }
+          - { name: note_title, label: Заглавие на бележката, widget: string, i18n: true }
+          - { name: note, label: Бележка, widget: text, i18n: true }
+
+      - name: links
+        label: Полезни връзки
+        file: content/links.json
+        i18n: true
+        fields:
+          - { name: title, label: Заглавие на страницата, widget: string, i18n: true }
+          - { name: seo_description, label: Описание в Google, widget: text, i18n: true }
+          - { name: intro, label: Въведение, widget: text, required: false, i18n: true }
+          - name: groups
+            label: Групи връзки
+            label_singular: Група
+            widget: list
+            i18n: true
+            summary: "{{fields.title}}"
+            fields:
+              - { name: title, label: Заглавие на групата, widget: string }
+              - name: links
+                label: Връзки
+                label_singular: Връзка
+                widget: list
+                summary: "{{fields.label}}"
+                fields:
+                  - { name: label, label: Име, widget: string }
+                  - { name: url, label: "Адрес (https://…)", widget: string }
+                  - { name: note, label: Кратко описание, widget: string, required: false }
+
+      - name: gallery
+        label: Галерия
+        file: content/gallery.json
+        i18n: true
+        fields:
+          - { name: title, label: Заглавие на страницата, widget: string, i18n: true }
+          - { name: seo_description, label: Описание в Google, widget: text, i18n: true }
+          - { name: intro, label: Въведение, widget: text, required: false, i18n: true }
+          - name: images
+            label: Снимки
+            label_singular: Снимка
+            widget: list
+            i18n: true
+            summary: "{{fields.alt}}"
+            fields:
+              - { name: src, label: Снимка, widget: image }
+              - { name: alt, label: Кратко описание на снимката, widget: string, hint: Помага на незрящи посетители и на Google. }
+
+      - name: friends
+        label: Наши приятели
+        file: content/friends.json
+        i18n: true
+        fields:
+          - { name: title, label: Заглавие на страницата, widget: string, i18n: true }
+          - { name: seo_description, label: Описание в Google, widget: text, i18n: true }
+          - { name: intro, label: Въведение, widget: text, required: false, i18n: true }
+          - name: friends
+            label: Приятели
+            label_singular: Приятел
+            widget: list
+            i18n: true
+            summary: "{{fields.name}}"
+            fields:
+              - { name: name, label: Име, widget: string }
+              - { name: logo, label: Лого, widget: image, required: false }
+              - { name: url, label: "Уебсайт (https://…)", widget: string, required: false }
+              - { name: text, label: Описание, widget: text }
+
+      - name: contacts
+        label: Контакти (страница)
+        file: content/contacts.json
+        i18n: true
+        fields:
+          - { name: title, label: Заглавие на страницата, widget: string, i18n: true }
+          - { name: seo_description, label: Описание в Google, widget: text, i18n: true }
+          - { name: intro, label: Въведение, widget: text, i18n: true }
+          - { name: person, label: Име над картите, widget: string, i18n: true }
+
+  # ------------------------------------------------------------------ child development stages
+  - name: stages
+    label: Етапи на развитие
+    label_singular: Етап
+    description: Статиите „От 0 до 1 година“, „От 1 до 2 години“ и т.н. Подредбата е по полето „Поредност“.
+    folder: content/development
+    extension: json
+    format: json
+    create: true
+    delete: true
+    i18n: true
+    identifier_field: title
+    summary: "{{order}}. {{title}}"
+    sortable_fields: [order, title]
+    fields:
+      - { name: order, label: Поредност, widget: number, value_type: int, i18n: duplicate }
+      - { name: title, label: Заглавие, widget: string, i18n: true }
+      - { name: age_label, label: Възраст (кратко в кръгчето), widget: string, hint: "Например: 0–1", i18n: true }
+      - { name: summary, label: Кратко описание, widget: text, i18n: true }
+      - { name: body, label: Текст, widget: markdown, hint: "Подзаглавията (### 1-ви месец) се показват като точки по времевата линия.", i18n: true }
+
+  # ------------------------------------------------------------------ materials (articles)
+  - name: articles
+    label: Материали за упражнения
+    label_singular: Материал
+    description: „Правила за говорене“, „Артикулационни упражнения“ и нови материали.
+    folder: content/materials
+    extension: json
+    format: json
+    create: true
+    delete: true
+    i18n: true
+    identifier_field: title
+    summary: "{{order}}. {{title}}"
+    sortable_fields: [order, title]
+    fields:
+      - { name: order, label: Поредност, widget: number, value_type: int, i18n: duplicate }
+      - { name: title, label: Заглавие, widget: string, i18n: true }
+      - { name: summary, label: Кратко описание, widget: text, i18n: true }
+      - { name: image, label: Картинка, widget: image, required: false, i18n: duplicate }
+      - { name: body, label: Текст, widget: markdown, hint: "Номерираният списък (1. 2. 3.) се показва с цветни кръгчета.", i18n: true }
+      - { name: closing, label: Жълт надпис накрая (по желание), widget: text, required: false, hint: Всеки ред е отделен ред в надписа., i18n: true }
+
+  # ------------------------------------------------------------------ settings
+  - name: settings
+    label: Настройки и контакти
+    description: Телефон, имейл, адрес, работно време, менюто и малките надписи по сайта.
+    i18n: true
+    files:
+      - name: settings
+        label: Настройки и контакти
+        file: content/settings.json
+        i18n: true
+        fields:
+          - { name: site_name, label: Име на кабинета, widget: string, i18n: true }
+          - { name: site_tagline, label: Подзаглавие, widget: string, i18n: true }
+          - { name: seo_description, label: Описание в Google (по подразбиране), widget: text, i18n: true }
+          - { name: phone, label: Телефон (за обаждане), widget: string, hint: "С код на държавата, без интервали: +359888510378", i18n: duplicate }
+          - { name: phone_display, label: Телефон (както се показва), widget: string, i18n: true }
+          - { name: email, label: Имейл, widget: string, i18n: duplicate }
+          - { name: address, label: Адрес, widget: string, i18n: true }
+          - { name: maps_url, label: Връзка към Google Maps, widget: string, i18n: duplicate }
+          - { name: working_days, label: Работни дни, widget: string, i18n: true }
+          - { name: days_off, label: Почивни дни, widget: string, i18n: true }
+          - { name: site_url, label: Адрес на сайта, widget: string, i18n: duplicate }
+          - name: nav
+            label: Меню
+            widget: object
+            collapsed: true
+            i18n: true
+            fields:
+              - { name: home, label: Начало, widget: string }
+              - { name: group_about, label: "Група: За нас", widget: string }
+              - { name: therapists, label: Терапевти, widget: string }
+              - { name: gallery, label: Галерия, widget: string }
+              - { name: friends, label: Наши приятели, widget: string }
+              - { name: group_services, label: "Група: Услуги", widget: string }
+              - { name: services, label: Услуги, widget: string }
+              - { name: prices, label: Цени, widget: string }
+              - { name: group_parents, label: "Група: За родители", widget: string }
+              - { name: development, label: Развитие на детето, widget: string }
+              - { name: materials, label: Материали, widget: string }
+              - { name: reflection, label: Място за размисъл, widget: string }
+              - { name: links, label: Полезни връзки, widget: string }
+              - { name: contacts, label: Контакти, widget: string }
+          - name: ui
+            label: Малки надписи (бутони и др.)
+            widget: object
+            collapsed: true
+            i18n: true
+            fields:
+              - { name: cta_call, label: Бутон „Обадете се“, widget: string }
+              - { name: cta_email, label: Бутон „Пишете ни“, widget: string }
+              - { name: cta_services, label: Бутон „Нашите услуги“, widget: string }
+              - { name: read_more, label: „Прочетете“, widget: string }
+              - { name: prev, label: „Предишна“, widget: string }
+              - { name: next, label: „Следваща“, widget: string }
+              - { name: back_to, label: „Обратно към“, widget: string }
+              - { name: menu, label: „Меню“, widget: string }
+              - { name: close, label: „Затвори“, widget: string }
+              - { name: skip, label: „Към съдържанието“, widget: string }
+              - { name: language, label: „Език“, widget: string }
+              - { name: working_days_label, label: „Работни дни“, widget: string }
+              - { name: days_off_label, label: „Почивни дни“, widget: string }
+              - { name: phone_label, label: „Телефон“, widget: string }
+              - { name: email_label, label: „Имейл“, widget: string }
+              - { name: address_label, label: „Адрес“, widget: string }
+              - { name: open_map, label: „Виж на картата“, widget: string }
+              - { name: footer_text, label: Текст в долната част, widget: text }
+              - { name: rights, label: „Всички права запазени“, widget: string }
+              - { name: not_found_title, label: "Страница 404: заглавие", widget: string }
+              - { name: not_found_text, label: "Страница 404: текст", widget: text }
+              - { name: not_found_link, label: "Страница 404: бутон", widget: string }

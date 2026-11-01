@@ -1,0 +1,17 @@
+{
+  "name": "nomi-website",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Website of Nomi speech therapy and child psychology practice (BG / DE / EN), static, editable via Sveltia CMS.",
+  "type": "module",
+  "scripts": {
+    "build": "node build.mjs",
+    "dev": "node dev.mjs"
+  },
+  "dependencies": {
+    "marked": "^14.1.4"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

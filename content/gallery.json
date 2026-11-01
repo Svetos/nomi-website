@@ -1,0 +1,83 @@
+{
+  "bg": {
+    "title": "Галерия",
+    "seo_description": "Снимки от логопедичен и психологичен кабинет Номи.",
+    "intro": "Надникнете в нашия кабинет – място за игра, учене и разговори.",
+    "images": [
+      {
+        "src": "/images/uploads/kabinet-1.jpg",
+        "alt": "Момиче рисува на масата в кабинета"
+      },
+      {
+        "src": "/images/uploads/kabinet-2.jpg",
+        "alt": "Занимание с игри в кабинета"
+      },
+      {
+        "src": "/images/uploads/kabinet-3.jpg",
+        "alt": "Деца играят на маса в кабинета"
+      },
+      {
+        "src": "/images/uploads/kabinet-4.jpg",
+        "alt": "Рафтове с игри и книжки в кабинета"
+      },
+      {
+        "src": "/images/uploads/trolls.gif",
+        "alt": "Три малки трола"
+      }
+    ]
+  },
+  "de": {
+    "title": "Galerie",
+    "seo_description": "Fotos aus der logopädischen und psychologischen Praxis Nomi.",
+    "intro": "Werfen Sie einen Blick in unsere Praxis – ein Ort zum Spielen, Lernen und Reden.",
+    "images": [
+      {
+        "src": "/images/uploads/kabinet-1.jpg",
+        "alt": "Mädchen malt am Tisch in der Praxis"
+      },
+      {
+        "src": "/images/uploads/kabinet-2.jpg",
+        "alt": "Spielerische Übung in der Praxis"
+      },
+      {
+        "src": "/images/uploads/kabinet-3.jpg",
+        "alt": "Kinder spielen am Tisch in der Praxis"
+      },
+      {
+        "src": "/images/uploads/kabinet-4.jpg",
+        "alt": "Regale mit Spielen und Büchern in der Praxis"
+      },
+      {
+        "src": "/images/uploads/trolls.gif",
+        "alt": "Drei kleine Trolle"
+      }
+    ]
+  },
+  "en": {
+    "title": "Gallery",
+    "seo_description": "Photos from the Nomi speech therapy and psychology practice.",
+    "intro": "Take a peek inside our practice – a place for playing, learning and talking.",
+    "images": [
+      {
+        "src": "/images/uploads/kabinet-1.jpg",
+        "alt": "A girl drawing at the table in the practice"
+      },
+      {
+        "src": "/images/uploads/kabinet-2.jpg",
+        "alt": "A playful session in the practice"
+      },
+      {
+        "src": "/images/uploads/kabinet-3.jpg",
+        "alt": "Children playing at a table in the practice"
+      },
+      {
+        "src": "/images/uploads/kabinet-4.jpg",
+        "alt": "Shelves with games and books in the practice"
+      },
+      {
+        "src": "/images/uploads/trolls.gif",
+        "alt": "Three little trolls"
+      }
+    ]
+  }
+}

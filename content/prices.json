@@ -1,0 +1,128 @@
+{
+  "bg": {
+    "title": "Цени",
+    "seo_description": "Цени на логопедични и психологични консултации, терапия и изследвания в кабинет Номи.",
+    "intro": "",
+    "items": [
+      {
+        "name": "Логопедична / психологична консултация и обследване",
+        "duration": "1 час",
+        "price": "40 €"
+      },
+      {
+        "name": "Логопедична терапия при деца и възрастни, 1 сесия",
+        "duration": "50 минути",
+        "price": "30 €"
+      },
+      {
+        "name": "Терапия на деца с психологични проблеми, 1 сесия",
+        "duration": "50 минути",
+        "price": "30 €"
+      },
+      {
+        "name": "Семейна консултация, 1 сесия",
+        "duration": "1 час и 15 минути",
+        "price": "50 €"
+      },
+      {
+        "name": "Психологична консултация с възрастен, 1 сесия",
+        "duration": "50 минути",
+        "price": "40 €"
+      },
+      {
+        "name": "Изготвяне на логопедична / психологична оценка",
+        "duration": "",
+        "price": "25 €"
+      },
+      {
+        "name": "Изследване на коефициента на интелигентност на деца от 6 до 16 г. с теста на Векслер",
+        "duration": "",
+        "price": "40 €"
+      }
+    ]
+  },
+  "de": {
+    "title": "Preise",
+    "seo_description": "Preise für logopädische und psychologische Beratung, Therapie und Tests in der Praxis Nomi.",
+    "intro": "",
+    "items": [
+      {
+        "name": "Logopädische / psychologische Beratung und Untersuchung",
+        "duration": "1 Stunde",
+        "price": "40 €"
+      },
+      {
+        "name": "Logopädische Therapie für Kinder und Erwachsene, 1 Sitzung",
+        "duration": "50 Minuten",
+        "price": "30 €"
+      },
+      {
+        "name": "Therapie für Kinder mit psychischen Problemen, 1 Sitzung",
+        "duration": "50 Minuten",
+        "price": "30 €"
+      },
+      {
+        "name": "Familienberatung, 1 Sitzung",
+        "duration": "1 Stunde 15 Minuten",
+        "price": "50 €"
+      },
+      {
+        "name": "Psychologische Beratung für Erwachsene, 1 Sitzung",
+        "duration": "50 Minuten",
+        "price": "40 €"
+      },
+      {
+        "name": "Erstellung eines logopädischen / psychologischen Gutachtens",
+        "duration": "",
+        "price": "25 €"
+      },
+      {
+        "name": "Intelligenztest (IQ) für Kinder von 6 bis 16 Jahren mit dem Wechsler-Test",
+        "duration": "",
+        "price": "40 €"
+      }
+    ]
+  },
+  "en": {
+    "title": "Prices",
+    "seo_description": "Prices for speech therapy and psychological consultations, therapy and assessments at the Nomi practice.",
+    "intro": "",
+    "items": [
+      {
+        "name": "Speech therapy / psychological consultation and assessment",
+        "duration": "1 hour",
+        "price": "40 €"
+      },
+      {
+        "name": "Speech therapy for children and adults, 1 session",
+        "duration": "50 minutes",
+        "price": "30 €"
+      },
+      {
+        "name": "Therapy for children with psychological difficulties, 1 session",
+        "duration": "50 minutes",
+        "price": "30 €"
+      },
+      {
+        "name": "Family consultation, 1 session",
+        "duration": "1 hour 15 minutes",
+        "price": "50 €"
+      },
+      {
+        "name": "Psychological consultation for adults, 1 session",
+        "duration": "50 minutes",
+        "price": "40 €"
+      },
+      {
+        "name": "Written speech therapy / psychological report",
+        "duration": "",
+        "price": "25 €"
+      },
+      {
+        "name": "IQ assessment for children aged 6 to 16 with the Wechsler test",
+        "duration": "",
+        "price": "40 €"
+      }
+    ]
+  }
+}
