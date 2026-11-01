@@ -204,13 +204,11 @@ p { margin: 0 0 1em; }
 .cloud-b { animation-duration: 24s; animation-direction: alternate-reverse; }
 .bee-fly { animation: bob 3.2s ease-in-out infinite; }
 .canopy { animation: sway 7s ease-in-out infinite; transform-origin: 414px 300px; transform-box: view-box; }
-.nome-anim { animation: wiggle 4.2s ease-in-out infinite; transform-box: fill-box; transform-origin: 50% 100%; }
-.nome-anim.nome-waver { animation: hop 2.8s ease-in-out infinite; }
+.nome-anim { animation: hop 3.6s ease-in-out infinite; transform-box: fill-box; transform-origin: 50% 100%; }
 @keyframes spin { to { transform: rotate(360deg); } }
 @keyframes drift { from { transform: translateX(-14px); } to { transform: translateX(22px); } }
 @keyframes bob { 0%, 100% { transform: translate(0, 0); } 50% { transform: translate(10px, -12px); } }
 @keyframes sway { 0%, 100% { transform: rotate(-.8deg); } 50% { transform: rotate(.8deg); } }
-@keyframes wiggle { 0%, 100% { transform: rotate(0); } 25% { transform: rotate(-3deg); } 75% { transform: rotate(3deg); } }
 @keyframes hop { 0%, 70%, 100% { transform: translateY(0); } 80% { transform: translateY(-6px); } 90% { transform: translateY(0); } }
 
 /* ------------------------------------------------------------ inner page hero */

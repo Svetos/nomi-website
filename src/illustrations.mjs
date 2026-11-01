@@ -137,10 +137,10 @@ export const sprite = `
   </defs>
 </svg>`;
 
-// Every nome gets a gentle idle animation; the staggered delay keeps them from moving in sync.
+// Every nome hops now and then; the staggered delay keeps them from jumping in sync.
 let nomeCount = 0;
 const nome = (kind, x, y, w, vars, cls = '') => {
-  const delay = ((nomeCount++ * 0.9) % 3.6).toFixed(1);
+  const delay = ((nomeCount++ * 1.37) % 3.6).toFixed(2);
   return `<use href="#${kind}" x="${x}" y="${y}" width="${w}" height="${(w * (kind === 'nome-sit' ? 100 / 70 : 110 / 60)).toFixed(1)}" style="${vars};animation-delay:-${delay}s" class="nome-anim${cls ? ' ' + cls : ''}"/>`;
 };
 export { nome };

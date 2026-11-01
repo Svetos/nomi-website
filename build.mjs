@@ -8,6 +8,7 @@
 
 import fs from 'node:fs';
 import path from 'node:path';
+import crypto from 'node:crypto';
 import { fileURLToPath } from 'node:url';
 import { marked } from 'marked';
 import * as art from './src/illustrations.mjs';
@@ -81,6 +82,9 @@ const url = (lang, ...parts) => {
 };
 const pageUrl = (lang, id) => url(lang, PAGES[id]);
 const asset = (p) => (!p ? '' : /^(https?:)?\/\//.test(p) ? p : BASE + (p.startsWith('/') ? p : '/' + p));
+// CSS/JS get a content hash so browsers fetch the new file after every change (GitHub Pages caches ~10 min).
+const versioned = (p) =>
+  `${asset(p)}?v=${crypto.createHash('md5').update(fs.readFileSync(path.join(ROOT, p))).digest('hex').slice(0, 8)}`;
 const icon = (id, cls = 'icon') => `<svg class="${cls}" aria-hidden="true"><use href="#i-${id}"/></svg>`;
 const host = (u) => {
   try { return new URL(u).hostname.replace(/^www\./, ''); } catch { return u; }
@@ -223,8 +227,8 @@ function layout(ctx, { title, description, body, bodyClass = '' }) {
   <meta name="theme-color" content="#ffc93c">
   <link rel="icon" href="${asset('/assets/img/favicon.svg')}" type="image/svg+xml">
   <link rel="preload" href="${asset('/assets/fonts/pangolin-cyrillic.woff2')}" as="font" type="font/woff2" crossorigin>
-  <link rel="stylesheet" href="${asset('/assets/fonts/fonts.css')}">
-  <link rel="stylesheet" href="${asset('/assets/css/style.css')}">
+  <link rel="stylesheet" href="${versioned('/assets/fonts/fonts.css')}">
+  <link rel="stylesheet" href="${versioned('/assets/css/style.css')}">
   ${ctx.pageId === 'home' ? jsonLd(S, lang) : ''}
 </head>
 <body class="${bodyClass}">
@@ -234,7 +238,7 @@ ${header(ctx)}
 ${body}
 </main>
 ${footer(ctx)}
-<script src="${asset('/assets/js/main.js')}" defer></script>
+<script src="${versioned('/assets/js/main.js')}" defer></script>
 </body>
 </html>
 `;
@@ -758,8 +762,8 @@ function notFoundPage() {
   <title>404 – ${esc(S.site_name)}</title>
   <meta name="robots" content="noindex">
   <link rel="icon" href="${asset('/assets/img/favicon.svg')}" type="image/svg+xml">
-  <link rel="stylesheet" href="${asset('/assets/fonts/fonts.css')}">
-  <link rel="stylesheet" href="${asset('/assets/css/style.css')}">
+  <link rel="stylesheet" href="${versioned('/assets/fonts/fonts.css')}">
+  <link rel="stylesheet" href="${versioned('/assets/css/style.css')}">
   <script>
     (function () {
       var base = ${JSON.stringify(BASE)}, map = ${JSON.stringify(OLD_URLS)};
