@@ -1,6 +1,5 @@
 // Nomi website: mobile menu, dropdowns, language memory, reveal animations, gallery lightbox.
 (function () {
-  var doc = document.documentElement;
   var body = document.body;
 
   // Header shadow once the page scrolls.
@@ -47,17 +46,6 @@
     closeAll();
     if (body.classList.contains('nav-open') && toggle) toggle.click();
   });
-
-  // Remember the chosen language for the next visit to the root address.
-  document.querySelectorAll('.lang-switch a').forEach(function (a) {
-    a.addEventListener('click', function () {
-      try { localStorage.setItem('nomi-lang', a.dataset.lang); } catch (e) {}
-    });
-  });
-  try {
-    var current = doc.getAttribute('lang');
-    if (current) localStorage.setItem('nomi-lang', current);
-  } catch (e) {}
 
   // Gentle reveal on scroll.
   var items = document.querySelectorAll('.reveal');

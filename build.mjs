@@ -795,18 +795,8 @@ function rootRedirect() {
   <title>${esc(S.site_name)} – ${esc(S.site_tagline)}</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="canonical" href="${(S.site_url || '').replace(/\/+$/, '')}${url(DEFAULT_LANG)}">
-  <script>
-    (function () {
-      var langs = ${JSON.stringify(LANGS)}, pick = null;
-      try { pick = localStorage.getItem('nomi-lang'); } catch (e) {}
-      if (langs.indexOf(pick) < 0) {
-        var nav = (navigator.languages || [navigator.language || '']).map(function (l) { return String(l).slice(0, 2).toLowerCase(); });
-        pick = nav.filter(function (l) { return langs.indexOf(l) >= 0; })[0] || ${JSON.stringify(DEFAULT_LANG)};
-      }
-      location.replace(${JSON.stringify(BASE)} + '/' + pick + '/');
-    })();
-  </script>
-  <meta http-equiv="refresh" content="2; url=${url(DEFAULT_LANG)}">
+  <script>location.replace(${JSON.stringify(url(DEFAULT_LANG))});</script>
+  <meta http-equiv="refresh" content="0; url=${url(DEFAULT_LANG)}">
 </head>
 <body>
   <p><a href="${url('bg')}">Български</a> · <a href="${url('de')}">Deutsch</a> · <a href="${url('en')}">English</a></p>
