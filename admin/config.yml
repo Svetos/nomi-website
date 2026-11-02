@@ -79,7 +79,7 @@ collections:
             fields:
               - { name: name, label: Име, widget: string }
               - { name: role, label: Професия, widget: string }
-              - { name: photo, label: Снимка (по желание), widget: image, required: false, hint: "Ако няма снимка, се показва малко Номче." }
+              - { name: photo, label: Снимка (по желание), widget: image, required: false, hint: "Ако няма снимка, се показват инициалите." }
               - { name: education_title, label: "Заглавие: образование", widget: string }
               - name: education
                 label: Образование

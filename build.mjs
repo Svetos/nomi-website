@@ -89,6 +89,7 @@ const icon = (id, cls = 'icon') => `<svg class="${cls}" aria-hidden="true"><use 
 const host = (u) => {
   try { return new URL(u).hostname.replace(/^www\./, ''); } catch { return u; }
 };
+const initials = (name) => String(name).trim().split(/\s+/).map((w) => w[0]).join('').slice(0, 2).toUpperCase();
 const telHref = (phone) => 'tel:' + String(phone).replace(/[^+\d]/g, '');
 
 function write(rel, html) {
@@ -297,8 +298,8 @@ function ctaBand(ctx, title, text) {
 <section class="cta-band">
   <div class="container cta-inner reveal">
     <svg class="cta-nomes" viewBox="0 0 140 120" aria-hidden="true">
-      ${art.nome('nome-elder', 8, 6, 56, '--hat:#e84a3c;--coat:#2fa4d9')}
-      ${art.nome('nome-wave', 70, 18, 50, '--hat:#ffc93c;--coat:#4c9a5b', 'nome-waver')}
+      ${art.kid(6, 10, 60, { mood: 'worried', hair: 'curly', hairColor: '#3f2a63', shirt: '#ffc93c', pants: '#4b6a8a' })}
+      ${art.kid(72, 10, 60, { mood: 'happy', pose: 'wave', hair: 'pigtails', hairColor: '#8a4b23', shirt: '#2fa4d9', pants: '#e2557a' })}
     </svg>
     <div class="cta-text">
       <h2>${esc(title)}</h2>
@@ -476,7 +477,7 @@ ${pageHero(ctx, { title: P.title, intro: P.intro, crumbs: [], variant: 0 })}
     ${P.therapists.map((t) => `
     <article class="profile card reveal">
       <div class="profile-head">
-        <div class="avatar">${t.photo ? `<img src="${asset(t.photo)}" alt="${esc(t.name)}" width="160" height="160">` : art.avatarNome()}</div>
+        <div class="avatar">${t.photo ? `<img src="${asset(t.photo)}" alt="${esc(t.name)}" width="160" height="160">` : `<span class="avatar-initials">${esc(initials(t.name))}</span>`}</div>
         <div>
           <h2>${esc(t.name)}</h2>
           <p class="role">${esc(t.role)}</p>

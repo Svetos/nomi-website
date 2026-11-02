@@ -5,7 +5,7 @@ Static site for GitHub Pages, in **Bulgarian, German and English**, with an edit
 
 - No server and no database: plain HTML generated from JSON files in `content/`.
 - Editing: [Sveltia CMS](https://github.com/sveltia/sveltia-cms) (a modern Decap/Netlify CMS replacement). It commits to GitHub, and GitHub Actions rebuilds the site (~1 min).
-- Original SVG illustrations (nomes, the nome tree, mushrooms) in `src/illustrations.mjs`, with no third-party art licences to worry about.
+- Original SVG illustrations in `src/illustrations.mjs`: the nome children, whose face colour shows a feeling (yellow happy, blue-green sad, violet worried, red angry), plus the nome tree and mushrooms. No third-party art licences to worry about.
 - Fonts are self-hosted (Nunito + Pangolin, both with Cyrillic). No Google Fonts, no analytics, no cookies → no cookie banner needed.
 
 ## Structure
@@ -16,7 +16,7 @@ content/            ← ALL texts (one JSON per page, each with bg / de / en)
   materials/        ← exercise materials (speaking rules, articulation exercises)
 images/uploads/     ← photos (CMS uploads go here)
 assets/             ← css, js, fonts, favicon, clipart from the old site
-src/illustrations.mjs ← SVG nomes, tree, icons
+src/illustrations.mjs ← SVG children, tree, icons
 build.mjs           ← generates _site/ from content/
 dev.mjs             ← local preview with auto-rebuild
 admin/              ← CMS (index.html + config.yml)

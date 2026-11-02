@@ -96,7 +96,7 @@ p { margin: 0 0 1em; }
 
 .brand { display: flex; align-items: center; gap: 10px; text-decoration: none; color: var(--ink); flex: none; }
 .brand:hover { color: var(--ink); }
-.logo-mark { width: 44px; height: 58px; flex: none; transition: transform .3s ease; }
+.logo-mark { width: 52px; height: 50px; flex: none; transition: transform .3s ease; }
 .brand:hover .logo-mark { transform: rotate(-8deg) translateY(-2px); }
 .brand-text { display: flex; flex-direction: column; line-height: 1.05; }
 .brand-name { font-family: var(--font-display); font-size: 1.9rem; color: var(--coral); letter-spacing: .02em; }
@@ -169,7 +169,7 @@ p { margin: 0 0 1em; }
 @media (max-width: 420px) {
   .brand-tag { font-size: .68rem; max-width: 12em; }
   .brand-name { font-size: 1.6rem; }
-  .logo-mark { width: 38px; height: 50px; }
+  .logo-mark { width: 44px; height: 42px; }
 }
 
 /* ------------------------------------------------------------ hero (home) */
@@ -204,11 +204,19 @@ p { margin: 0 0 1em; }
 .cloud-b { animation-duration: 24s; animation-direction: alternate-reverse; }
 .bee-fly { animation: bob 3.2s ease-in-out infinite; }
 .canopy { animation: sway 7s ease-in-out infinite; transform-origin: 414px 300px; transform-box: view-box; }
-.nome-anim { animation: hop 3.6s ease-in-out infinite; transform-box: fill-box; transform-origin: 50% 100%; }
+/* each feeling moves in its own way */
+.kid { transform-box: fill-box; transform-origin: 50% 100%; }
+.mood-happy { animation: hop 3.6s ease-in-out infinite; }
+.mood-sad { animation: droop 5.5s ease-in-out infinite; }
+.mood-angry { animation: stomp 3.2s ease-in-out infinite; }
+.mood-worried { animation: shiver 4.5s ease-in-out infinite; }
 @keyframes spin { to { transform: rotate(360deg); } }
 @keyframes drift { from { transform: translateX(-14px); } to { transform: translateX(22px); } }
 @keyframes bob { 0%, 100% { transform: translate(0, 0); } 50% { transform: translate(10px, -12px); } }
 @keyframes sway { 0%, 100% { transform: rotate(-.8deg); } 50% { transform: rotate(.8deg); } }
+@keyframes droop { 0%, 100% { transform: rotate(0) scaleY(1); } 50% { transform: rotate(-2.5deg) scaleY(.97); } }
+@keyframes stomp { 0%, 62%, 100% { transform: translateY(0) rotate(0); } 68% { transform: translateY(-3px) rotate(-2deg); } 74% { transform: translateY(0) rotate(0); } 80% { transform: translateY(-3px) rotate(2deg); } 86% { transform: translateY(0) rotate(0); } }
+@keyframes shiver { 0%, 70%, 100% { transform: translateX(0); } 74% { transform: translateX(-1.5px); } 78% { transform: translateX(1.5px); } 82% { transform: translateX(-1.5px); } 86% { transform: translateX(1.5px); } 90% { transform: translateX(0); } }
 @keyframes hop { 0%, 70%, 100% { transform: translateY(0); } 80% { transform: translateY(-6px); } 90% { transform: translateY(0); } }
 
 /* ------------------------------------------------------------ inner page hero */
@@ -266,7 +274,7 @@ p { margin: 0 0 1em; }
 }
 .bubble:nth-child(even)::after { left: auto; right: 44px; }
 .bubble:nth-child(even) { transform: translateY(18px); }
-.question-nomes { display: block; width: 300px; max-width: 80%; margin: 30px auto 0; }
+.question-nomes { display: block; width: 500px; max-width: 80%; margin: 30px auto 0; }
 .motto { text-align: center; margin: 10px 0 0; }
 .motto span { display: inline-block; font-family: var(--font-display); font-size: clamp(1.4rem, 3vw, 2rem); color: #fff; background: var(--sky); padding: 10px 30px; border-radius: 999px; box-shadow: 0 6px 0 #1f86b6; transform: rotate(-1.5deg); }
 @media (max-width: 700px) {
@@ -362,7 +370,7 @@ a.contact-card:hover { transform: translateY(-4px); color: var(--ink); }
 @media (max-width: 1000px) { .contact-cards { grid-template-columns: 1fr 1fr; } }
 @media (max-width: 560px) { .contact-cards { grid-template-columns: 1fr; } }
 .person { display: flex; align-items: center; gap: 12px; justify-content: center; font-family: var(--font-display); font-size: 1.8rem; margin-bottom: 26px; }
-.person .logo-mark { width: 40px; height: 52px; }
+.person .logo-mark { width: 48px; height: 46px; }
 
 /* CTA band */
 .cta-band { padding: 10px 0 70px; }
@@ -390,7 +398,8 @@ a.contact-card:hover { transform: translateY(-4px); color: var(--ink); }
 .profile-head h2 { font-size: 2.3rem; margin: 0; }
 .role { margin: 4px 0 0; font-weight: 800; color: var(--coral-dark); }
 .avatar { width: 140px; height: 140px; border-radius: 50%; overflow: hidden; flex: none; box-shadow: 0 0 0 6px #fff, 0 0 0 10px var(--sun); }
-.avatar img, .avatar svg { width: 100%; height: 100%; object-fit: cover; }
+.avatar img { width: 100%; height: 100%; object-fit: cover; }
+.avatar-initials { display: flex; align-items: center; justify-content: center; width: 100%; height: 100%; background: var(--sun-soft); color: var(--coral-dark); font-family: var(--font-display); font-size: 3.2rem; }
 .profile-body { display: grid; grid-template-columns: 1fr 1fr; gap: 34px; }
 .profile-body h3 { font-size: 1.6rem; color: var(--leaf-dark); }
 @media (max-width: 760px) { .profile-body { grid-template-columns: 1fr; } }
