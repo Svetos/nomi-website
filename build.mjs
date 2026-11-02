@@ -684,7 +684,7 @@ ${pageHero(ctx, { title: P.title, intro: P.intro, crumbs: [], variant: 0 })}
 <section class="section">
   <div class="container">
     <ul class="gallery-grid">
-      ${P.images.map((im, i) => `<li class="reveal" style="--d:${i * 60}ms"><button type="button" class="gallery-item" data-full="${asset(im.src)}" data-alt="${esc(im.alt)}"><img src="${asset(im.src)}" alt="${esc(im.alt)}" loading="lazy"></button></li>`).join('')}
+      ${P.images.filter((im) => im.src).map((im, i) => `<li class="reveal" style="--d:${i * 60}ms"><button type="button" class="gallery-item" data-full="${asset(im.src)}" data-alt="${esc(im.alt)}"><img src="${asset(im.src)}" alt="${esc(im.alt)}" loading="lazy"></button></li>`).join('')}
     </ul>
   </div>
   <dialog class="lightbox" aria-label="${esc(P.title)}">
